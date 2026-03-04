@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue.svg" />
+  <img alt="License: GNU GENERAL PUBLIC LICENSE" src="https://img.shields.io/badge/License-GNU%20GENERAL%20PUBLIC%20LICENSE-blue.svg" />
   <img alt="Platform" src="https://img.shields.io/badge/platform-Linux-lightgrey.svg" />
   <img alt="Bash" src="https://img.shields.io/badge/language-Bash-4EAA25.svg" />
 </p>
@@ -56,7 +56,7 @@ sudo pacman -S smartmontools
 Clone the repository and run the installer script.
 
 ```bash
-git clone https://github.com/yourusername/ssd-health-cli.git
+git clone https://github.com/blackstart-labs/ssd-health-cli.git
 cd ssd-health-cli
 
 # Make scripts executable
