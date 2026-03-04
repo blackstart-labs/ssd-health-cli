@@ -71,10 +71,10 @@ sudo ./install.sh
 After installation, the tool is available globally! Run the command:
 
 ```bash
-ssd-health
+sudo ssd-health
 ```
 
-_Note: The tool requires root privileges via `sudo` internally to read SMART data. You may be prompted for your user password unless executed directly as root._
+_Note: The tool requires root privileges to read SMART data directly from your hardware._
 
 ### Example Output
 
