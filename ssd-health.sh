@@ -45,8 +45,8 @@ if [ "$EUID" -ne 0 ]; then
     fi
 fi
 
-# Find non-rotating drives (assume SSD/NVMe)
-ssds=$(lsblk -d -o NAME,ROTA | awk 'NR>1 && $2=="0" {print $1}')
+# Find non-rotating drives (assume SSD/NVMe) and exclude virtual devices like zram
+ssds=$(lsblk -d -o NAME,TYPE,ROTA | awk 'NR>1 && $2=="disk" && $3=="0" && $1!~/^zram/ {print $1}')
 
 if [ -z "$ssds" ]; then
     echo "No solid state drives (SSDs) found on this system."
