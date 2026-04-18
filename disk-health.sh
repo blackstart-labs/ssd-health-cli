@@ -33,9 +33,9 @@ get_sudo() {
     if [ ! -w "$TARGET_PATH" ] && [ "$EUID" -ne 0 ]; then
         if command -v sudo &> /dev/null; then
             SCMD="sudo"
-            echo -e "${YELLOW}Requesting sudo privileges for $TARGET_PATH...${NC}"
+            echo -e "${YELLOW}Requesting sudo privileges for $TARGET_PATH...${NC}" >&2
         else
-            echo -e "${RED}Error: Cannot manipulate $TARGET_PATH and 'sudo' is not available.${NC}"
+            echo -e "${RED}Error: Cannot manipulate $TARGET_PATH and 'sudo' is not available.${NC}" >&2
             exit 1
         fi
     fi
