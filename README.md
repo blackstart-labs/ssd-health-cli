@@ -45,14 +45,14 @@ The script will attempt to install these automatically via your system package m
 ### Option 1: One-Line Installer (Recommended)
 You can install `disk-health-cli` directly by running the following command in your terminal:
 ```bash
-curl -sSfL https://raw.githubusercontent.com/blackstart-labs/disk-health-cli/main/install.sh | sudo bash
+curl -sSfL https://raw.githubusercontent.com/blackstart-lab/disk-health-cli/main/install.sh | sudo bash
 ```
 
 ### Option 2: Manual Installation (Git Clone)
 Clone the repository and run the installer script.
 
 ```bash
-git clone https://github.com/blackstart-labs/disk-health-cli.git
+git clone https://github.com/blackstart-lab/disk-health-cli.git
 cd disk-health-cli
 
 # Make scripts executable
